@@ -4,12 +4,25 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-
+/**
+ * Punto de entrada de la aplicación de consola para consultar incidencias.
+ * Admite un menú interactivo o comandos recibidos como argumentos.
+ *
+ * @author Ismael Vazquez Zas
+ * @version 1.0.0
+ * @since 1.0.0
+ * @see GestorIncidencias
+ */
 public final class App {
 
+/** Impide la creación de instancias de esta clase de utilidades. */
     private App() {
     }
 
+/**
+ * Inicia la aplicación y procesa el comando recibido, si lo hay.
+ * @param args argumentos de línea de comandos; puede estar vacío para abrir el menú
+ */
     public static void main(String[] args) {
         GestorIncidencias gestor = new GestorIncidencias();
 
